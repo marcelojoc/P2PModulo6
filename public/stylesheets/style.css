@@ -1,9 +1,82 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#ffff;
+  color:gray;
 }
 
 a {
-  color: #00B7FF;
+  color: #827717;
+  text-decoration:none;
+  margin:5px;
 }
+
+header h1
+{
+text-align: center;
+font-size:2em;
+}
+#wraper{
+	background-color:#f0f4c3;
+	padding:10px;
+}
+
+nav
+{
+background-color: #cddc39;
+padding-top:5px;
+}
+
+nav li{
+list-style: none;
+height: 30px;
+border-bottom:none;
+text-align: center;
+width: 100%;
+
+
+}
+nav li:hover{
+ background-color: #c0ca33;
+}
+
+nav a{
+ padding-top:5px;
+}
+
+footer{
+	height: 4em;
+	position: relative;
+
+	clear: both;
+	background: #afb42b;
+	text-align: center;
+	color: #FFFFFF;
+	margin:auto 0;
+
+}
+
+footer a{ 
+color:#fff;
+text-decoration: none;
+vertical-align: middle;
+padding-top:10px;
+}
+
+	
+/*Estilos Generales*/
+.button {
+	background:#cddc39;
+	color:#827717;
+	display:inline-block;
+	font-size:1em;
+	margin:5px;
+	padding:5px 0;
+	text-align:center;
+	width:150px;
+	text-decoration:none;
+	box-shadow:0px 3px 0px #c0ca33;
+	 border:none;
+}
+ 
 
