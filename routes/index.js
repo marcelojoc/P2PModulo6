@@ -9,5 +9,7 @@ router.get('/', function(req, res) {
 
 router.get('/question',quiz_controller.question);
 router.get('/answer',quiz_controller.answer);
+//  ruta para pagian de autor
+router.get('/autor',quiz_controller.autor);
 
 module.exports = router;

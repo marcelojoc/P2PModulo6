@@ -12,3 +12,10 @@ exports.answer= function(req, res){
 		res.render('quiz/answer',{respuesta:'Incorrecto', title: 'Quiz App'});
 	}
 };
+
+
+//pagina de autor
+
+exports.autor= function(req, res){
+res.render('quiz/autor');
+};
