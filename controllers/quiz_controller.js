@@ -1,17 +1,24 @@
-exports.question= function(req, res){
-res.render('quiz/question',{pregunta:'Capital de Italia',
-							title: 'Quiz App'
-							} );
+var models = require('../models/models.js');
+
+// GET /quizes/question
+exports.question = function(req, res) {
+  models.Quiz.findAll().then(function(quiz) {
+    res.render('quiz/question', { pregunta: quiz[0].pregunta});
+  })
 };
 
-exports.answer= function(req, res){
-	if(req.query.respuesta ==='roma'){
-		res.render('quiz/answer',{respuesta:'Correcto', title: 'Quiz App' });
-	}else
-	{
-		res.render('quiz/answer',{respuesta:'Incorrecto', title: 'Quiz App'});
-	}
+// GET /quizes/answer
+exports.answer = function(req, res) {
+  models.Quiz.findAll().then(function(quiz) {
+    if (req.query.respuesta === quiz[0].respuesta) {
+      res.render('quiz/answer', { respuesta: 'Correcto' });
+    } else {
+      res.render('quiz/answer', { respuesta: 'Incorrecto'});
+    }
+  })
 };
+
+
 
 
 //pagina de autor
